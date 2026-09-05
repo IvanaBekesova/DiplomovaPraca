@@ -1,29 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class VisionController : MonoBehaviour
 {
-    public Slider angleSlider;
-    public Slider percentSlider;
-    public Slider softnessSlider;
-
     public Material visionMaskMaterial;
 
-    public float Angle { get; private set; }
-    public float Percent { get; private set; }
-    public float Softness { get; private set; }
-
-void Update()
-{
-    Angle = angleSlider.value;
-    Percent = percentSlider.value;
-    Softness = softnessSlider.value;
-
-    if (visionMaskMaterial != null)
+    void Update()
     {
-        visionMaskMaterial.SetFloat("_Angle", Angle);
-        visionMaskMaterial.SetFloat("_Percent", Percent / 100f);
-        visionMaskMaterial.SetFloat("_Softness", Softness);
+        if (visionMaskMaterial != null)
+        {
+            visionMaskMaterial.SetFloat("_Angle", Shader.GetGlobalFloat("_Angle"));
+            visionMaskMaterial.SetFloat("_Percent", Shader.GetGlobalFloat("_Percent"));
+            visionMaskMaterial.SetFloat("_Softness", Shader.GetGlobalFloat("_Softness"));
+        }
     }
-}
 }
