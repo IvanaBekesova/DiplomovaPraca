@@ -22,4 +22,9 @@ public class FieldOfViewEffect : MonoBehaviour
         percentValue.text = Mathf.Round(percentSlider.value) + "%";
         softnessValue.text = Mathf.Round(softnessSlider.value * 100) + "%";
     }
+
+    public void DeleteEffect()
+{
+    Destroy(gameObject);
+}
 }
