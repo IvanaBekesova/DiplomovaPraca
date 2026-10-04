@@ -3789,12 +3789,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3238ebc6d7553d246b629635151d92a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VisionController
-  angleSlider: {fileID: 0}
-  percentSlider: {fileID: 0}
-  softnessSlider: {fileID: 0}
-  angleValue: {fileID: 0}
-  percentValue: {fileID: 0}
-  softnessValue: {fileID: 0}
   visionMaskMaterial: {fileID: 2100000, guid: 46a9305e26c3bf3448bf093314f5d4a1, type: 2}
 --- !u!114 &1780446165
 MonoBehaviour:
@@ -4292,7 +4286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0fd7385bfc0a4b4ab2965b452cd2997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
-  target: {fileID: 1954767532}
+  target: {fileID: 1037948746}
   offset: {x: 0, y: 1.6, z: 0}
 --- !u!1 &1954767523
 GameObject:
@@ -4538,7 +4532,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VisionEffect
   visionMaskMaterial: {fileID: 2100000, guid: 46a9305e26c3bf3448bf093314f5d4a1, type: 2}
-  visionController: {fileID: 1780446164}
 --- !u!1 &2010366730
 GameObject:
   m_ObjectHideFlags: 0
