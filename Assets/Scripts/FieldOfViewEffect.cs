@@ -27,4 +27,8 @@ public class FieldOfViewEffect : MonoBehaviour
 {
     Destroy(gameObject);
 }
+void OnDestroy()
+    {
+        Shader.SetGlobalFloat("_Percent", 0f);
+    }
 }

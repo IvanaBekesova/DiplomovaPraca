@@ -34,8 +34,9 @@ Shader "Custom/VisionMask"
                 float rad = _Angle * 3.14159265 / 180.0;
                 float2 dir = float2(cos(rad), sin(rad));
                 float proj = dot(uv, dir);
-                float edge = _Percent * 1.5 - 0.75;
                 float soft = max(_Softness * 0.1, 0.001);
+                float reach = 0.5 * (abs(dir.x) + abs(dir.y));        
+                float edge = lerp(-reach - soft, reach + soft, _Percent);
                 float alpha = smoothstep(edge + soft, edge - soft, -proj);
                 return half4(0, 0, 0, alpha);
             }
