@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 5152533120493851280}
   - component: {fileID: 8095198975342898616}
   m_Layer: 5
-  m_Name: SoftnessLabel
+  m_Name: OpacityLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "M\xE4kkos\u0165"
+  m_text: Opacita
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -651,10 +651,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FieldOfViewEffect
   angleSlider: {fileID: 5767385396509264462}
   percentSlider: {fileID: 8195049228382859255}
-  softnessSlider: {fileID: 4459907927645547706}
+  opacitySlider: {fileID: 4459907927645547706}
   angleValue: {fileID: 2979954393072458306}
   percentValue: {fileID: 4254863887743295223}
-  softnessValue: {fileID: 2322488290767485867}
+  opacityValue: {fileID: 2322488290767485867}
 --- !u!1 &1993477942103979566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,7 +1012,7 @@ GameObject:
   - component: {fileID: 997049632753507478}
   - component: {fileID: 2322488290767485867}
   m_Layer: 5
-  m_Name: SoftnessValue
+  m_Name: OpacityValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1892,7 +1892,7 @@ GameObject:
   - component: {fileID: 4733021050985501687}
   - component: {fileID: 4459907927645547706}
   m_Layer: 5
-  m_Name: SoftnessSlider
+  m_Name: OpacitySlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1965,9 +1965,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 3903316646724507608}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

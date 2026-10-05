@@ -6,21 +6,21 @@ public class FieldOfViewEffect : MonoBehaviour
 {
     public Slider angleSlider;
     public Slider percentSlider;
-    public Slider softnessSlider;
+    public Slider opacitySlider;
 
     public TextMeshProUGUI angleValue;
     public TextMeshProUGUI percentValue;
-    public TextMeshProUGUI softnessValue;
+    public TextMeshProUGUI opacityValue;
 
     void Update()
     {
         Shader.SetGlobalFloat("_Angle", angleSlider.value);
         Shader.SetGlobalFloat("_Percent", percentSlider.value / 100f);
-        Shader.SetGlobalFloat("_Softness", softnessSlider.value);
+        Shader.SetGlobalFloat("_Opacity", opacitySlider.value / 100f);
 
         angleValue.text = Mathf.Round(angleSlider.value) + "°";
         percentValue.text = Mathf.Round(percentSlider.value) + "%";
-        softnessValue.text = Mathf.Round(softnessSlider.value * 100) + "%";
+        opacityValue.text = Mathf.Round(opacitySlider.value) + "%";
     }
 
     public void DeleteEffect()

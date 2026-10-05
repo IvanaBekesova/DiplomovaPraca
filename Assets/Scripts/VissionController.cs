@@ -12,7 +12,7 @@ public class VisionController : MonoBehaviour
         {
             visionMaskMaterial.SetFloat("_Angle", Shader.GetGlobalFloat("_Angle"));
             visionMaskMaterial.SetFloat("_Percent", Shader.GetGlobalFloat("_Percent"));
-            visionMaskMaterial.SetFloat("_Softness", Shader.GetGlobalFloat("_Softness"));
+            visionMaskMaterial.SetFloat("_Opacity", Shader.GetGlobalFloat("_Opacity"));
         }
     }
 }
