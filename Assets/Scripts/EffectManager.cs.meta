@@ -1,2 +1,17 @@
 fileFormatVersion: 2
 guid: fc416077c397593439407341a192f6ff
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - effectModal: {instanceID: 0}
+  - effectsList: {instanceID: 0}
+  - fieldOfViewCardPrefab: {instanceID: 0}
+  - centralLossCardPrefab: {instanceID: 0}
+  - fieldOfViewButton: {instanceID: 0}
+  - centralLossButton: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

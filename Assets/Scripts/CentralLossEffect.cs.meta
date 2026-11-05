@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f861fddac5769bc4a98eb12932104e38
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - centralLossMaterial: {instanceID: 0}
+  - sizeSlider: {instanceID: 0}
+  - softnessSlider: {instanceID: 0}
+  - blurSlider: {instanceID: 0}
+  - sizeValue: {instanceID: 0}
+  - softnessValue: {instanceID: 0}
+  - blurValue: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
